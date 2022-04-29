@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+    <script src="https://kit.fontawesome.com/183c191db3.js" crossorigin="anonymous"></script>
+
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/snavbar.css">
+    <link rel="stylesheet" href="./style/m_sidebar2.css">
+
+
+   <style>
+   .headline{
+       /* margin-top: 50px; */
+       /* margin-bottom: 15px; */
+        margin:10px; 
+       border:2px solid teal;
+       text-align: center;
+       /* width:100%; */
+       padding:10px;
+       border-radius: 15px;
+   }
+   
+   .card-dat{
+    width: 30%;
+    align-self: left ;
+    margin-left: 20px;
+    border: 1px red;
+    height: auto;
+    display: inline-block !important; 
+    margin-top: 10px;
+}
+.card-dat img{
+    width: 150px !important;
+    border-radius: 50%;
+
+}
+.card-dat h1, .card-dat h2{
+    padding: 20px;
+    margin: 10px;
+}
+
+.courses{
+    width: 600px;
+    height: 500px;
+    display: inline-block;
+     border: 1px black; 
+    margin-left: 200px;
+    
+    
+}
+.courses:hover{
+    cursor: pointer;
+}
+
+.courses .tagline{
+    border: 2px solid grey;
+    text-align: center;
+    border-radius: 10px;
+}
+.column img{
+    width: 25%;
+    margin: 10px;
+    display: inline-block;
+    
+}
+.dis{
+    display: inline-block;
+    margin-left: 20px;
+}
+.dis h1 ,.dis h2{
+    margin: 10px;
+}
+.below-course{
+    display: inline-block;
+}
+#navBarBox{
+    border:2px solid lightcyan;
+    border-radius: 5px;
+}
+
+
+   </style>
+</head>
+<body>
+
+    <div id="navBarBox">
+        <div id="nav_bar">
+            <div id="left_box">
+                <div id="three_line-icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M2 15.5v2h20v-2H2zm0-5v2h20v-2H2zm0-5v2h20v-2H2z"/></svg></a></div>
+                <div id="interthery_img_logo"><a href="#">
+                    <img src="https://assets.interntheory.com/creative/logo.png"></a>
+                </div>
+            </div>
+    
+            <div id="right_box">
+                <div id="cart_img">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                    </a>
+                </div>
+                <!-- <div id="sign_in">
+                    <a href="student and company login.html">
+                    <button id="sgin">SIGN IN</button>
+                </a>
+                </div> -->
+            </div>
+        </div>
+        </div>
+
+    <!-- ---------------sidebar.html-------------------- -->
+        <div id="sidebar_div" ></div>
+
+    <!-- ---------------profile.html-------------------- -->
+    
+    <main>
+        <h1 class="headline"> My Profile</h1>
+        <div class="card-dat">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnIyZxJAl5REjZbn-b1EMFrTtXw3dXAQ7fTg&usqp=CAU" alt="">
+            <h1>SASASP</h1>
+            <h2>Email:- sasasp113@gmail.com
+            </h2>
+            <h2>Ph.no:- 91xxxxxx60</h2>
+            <h2>Address:- Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis amet soluta necessitatibus, debitis laboriosam odit officia porro labore similique nobis nostrum excepturi voluptate nesciunt, maxime voluptates nihil velit vel alias.</h2>
+            
+        </div>
+        
+        <div class="courses">
+            <h1 class="tagline">Recommended Courses</h1>
+            <div class="column">
+                <img src="http://127.0.0.1:5503/Intern-Theory-Clone--main/img/product-1.jpg" alt="">
+                <div class="dis">
+                    <h1 id="shivah1">Web Development</h1>
+                    <h2>Rs 30,000</h2>
+                    <h2>*****</h2>
+                </div>
+            </div>
+            
+            <div class="column">
+                <img src="http://127.0.0.1:5503/Intern-Theory-Clone--main/img/product-2.png" alt="">
+                <div class="dis">
+                    <h1>Android Development</h1>
+                    <h2>Rs 25,000</h2>
+                    <h2>*****</h2>
+                </div>
+            </div>
+            <div class="column">
+                <img src="http://127.0.0.1:5503/Intern-Theory-Clone--main/img/product-3.jpg" alt="">
+                <div class="dis">
+                    <h1>Stock Market Course</h1>
+                    <h2>Rs 20,000</h2>
+                    <h2>*****</h2>
+                </div>
+            </div>
+            <div class="below-course">
+                <img src="https://i.pinimg.com/736x/2f/71/08/2f7108adcd8af48b81fc51d9ddc5f61e.jpg"  width="400px" height="300px" alt="">
+            </div>
+        </div>
+    </main>
+    <div id="footer_container">
+        <div id="footer_con">
+            <div id="icon">
+                <p><i class="fa-brands fa-facebook-square"></i></p>
+                <p><i class="fa-brands fa-linkedin"></i></p>
+                <p><i class="fa-brands fa-twitter-square"></i></p>
+                <p> <i class="fa-brands fa-instagram"></i></p>
+            </div>
+        
+            
+            <div id="footer_left">
+                   <h3 id="footer_h">BY PLACE</h3>
+                   <div id="line_in_footer"></div>
+                    <p id="footer_p">  Internships In Mumbai</p>
+                   <p id="footer_p">   Internships In Delhi</p>
+                   <p id="footer_p">  Internships In Bangalore</p>
+                   <p id="footer_p">  Internships In Hyderabad</p>
+                    
+            </div>
+        
+            <div id="footer_midd">
+                <h3 id="footer_h">BY PROFILE</h3>
+                <div id="line_in_footer"></div>
+                <p id="footer_p">Marketing Internships</p>
+                <p id="footer_p">Business Development Internships</p>
+                <p id="footer_p">Content Writing Internships</p>
+                <p id="footer_p">Graphic Designing Internships</p>
+                <p id="footer_p">HR Internships</p>
+                <p id="footer_p">Engineering Internships</p>
+            </div>
+        
+            <div id="footer_right">
+                <h3 id="footer_h">BY TYPE</h3>
+                <div id="line_in_footer"></div>
+                <p id="footer_p">Full Time Internships</p>
+                <p id="footer_p">Part Time Internships</p>
+                <p id="footer_p">Work From Home Internships</p>
+        
+            </div>
+        </div>
+        
+        <div id="footer_last">
+            <div id="footer_dis">
+                <p>REFUND & CANCELLATION POLICY</p>
+                <p>COURSES</p>
+                <p>TERMS AND CONDITIONS</p>
+                <p>PRIVACY POLICY</p>
+                <p>CONTACT US</p>
+                <p>ABOUT US</p>
+                <p>SITEMAP</p>
+            </div>
+            <div id="line_in_footer"></div>
+            <p id="footer_in">© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
+        </div>
+        
+    </div>
+    </body>
+</html>
+
+<script type="module">
+
+    // --------slidebar.js-------------------------------------------
+   
+import sideBar from "./script/m_sidebar2.js"
+    
+    let sidebar_box = document.getElementById("sidebar_div");
+    console.log(sidebar_box)
+    sidebar_box.innerHTML = sideBar();
+
+
+    document.querySelector("#three_line-icon").addEventListener("click",sliding_function)
+
+    function sliding_function(){
+    let sliding_sidebar = document.getElementById("side_bar")
+    sliding_sidebar.style.left = "0";
+    sliding_sidebar.style.background = "white";
+     }
+    
+     document.querySelector("#sliding2").addEventListener("click",sliding_function2)
+
+    function sliding_function2(){
+    let sliding_sidebar = document.getElementById("side_bar")
+    sliding_sidebar.style.left = "-320px";
+     }
+    
+    //  document.querySelector("#main_div").addEventListener("click",sliding_function3)
+
+    // function sliding_function3(){
+    //     console.log("OK")
+    // let sliding_sidebar = document.getElementById("side_bar")
+    // sliding_sidebar.style.left = "-320px";
+    //  }
+
+
+ // let sliding_sidebar = document.getElementById("side_bar")
+    // sliding_sidebar.style.left = "-310px";
+
+
+
+    let show = document.getElementById("ul1")
+    console.log(show)
+    show.onclick = function(){
+        let show1 = document.getElementById("ul-1")
+        console.log(show1)
+        if( show1.style.display === ''){
+            show1.style.display = "none";
+        }
+        else if( show1.style.display === "none"){  
+            show1.style.display = 'block';
+        }
+        else if( show1.style.display === "block"){  
+            show1.style.display = 'none';
+        }
+      
+    }
+    let show_2 = document.getElementById("ul2")
+    console.log(show_2)
+    show_2.onclick = function(){
+        let show2 = document.getElementById("ul-2")
+        console.log(show2)
+        if( show2.style.display === ''){
+            show2.style.display = "none";
+        }
+        else if( show2.style.display === "none"){  
+            show2.style.display = 'block';
+        }
+        else if( show2.style.display === "block"){  
+            show2.style.display = 'none';
+        }   
+    }
+
+    let show_3 = document.getElementById("ul3")
+    console.log(show_3)
+    show_3.onclick = function(){
+        let show3 = document.getElementById("ul-3")
+        console.log(show3)
+        if( show3.style.display === ''){
+            show3.style.display = "none";
+        }
+        else if( show3.style.display === "none"){  
+            show3.style.display = 'block';
+        }
+        else if( show3.style.display === "block"){  
+            show3.style.display = 'none';
+        }   
+    }
+
+</script>

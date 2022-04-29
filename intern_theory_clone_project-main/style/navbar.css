@@ -1,0 +1,55 @@
+#nav_bar{
+	height: 60px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	margin-top: 1%;
+	/* position: fixed; */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+  #left_box{
+	height: 50px;
+	width: 45%;
+	display: flex;
+
+  }
+  #left_box>div{
+	  height: 45px;
+	  margin: 1%;
+	  
+  }
+  #icon_img > a >img{
+	  height: 40px;
+	  
+  }
+  #right_box{
+	height: 50px;
+	width: 15%;
+	display: flex;
+	float: left;
+  }
+
+#right_box>div{
+	margin-left: 10%;
+}
+
+#sign_in>a>button{
+	background-color: rgb(216, 32, 19);
+	color: white;
+	height: 35px;
+	width: 100px;
+	margin-bottom: 10%;
+	border-radius: 6px;
+	border: none;
+	font-size: 17px;
+	font-weight: 900;
+    
+} 
+#sign_in>a>button:hover{
+background-color: rgb(161, 4, 4);
+}
+a span{
+    margin-top: -150px;
+    font-size: large;
+}

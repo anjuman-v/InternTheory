@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <style>
+        #main_div {
+            /* border: 1px solid black; */
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+        }
+        
+        #advertisment {
+            width: 25%;
+            height: 250px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+        
+        #advertisment>img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #all_intership {
+            /* border: 1px solid lightgray; */
+            width: 75%;
+            margin-left: 15px;
+            padding: 20px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+        /* #heading{
+            border: 1px solid lightgray;
+        } */
+        
+        #heading>h2 {
+            padding-left: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 100;
+        }
+        
+        #intership_programs {
+            display: flex;
+            border-color: lightgray;
+            border-bottom-style: dashed;
+        }
+        
+        #imd-div {
+            /* border: 1px solid lightgray; */
+            width: 20%;
+            text-align: center;
+            /* padding: 10px; */
+        }
+        
+        #content {
+            /* border: 1px solid lightgray; */
+            width: 60%;
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+        
+        #view_apply {
+            /* border: 1px solid lightgray; */
+            width: 20%;
+            padding-right: 10px;
+            text-align: right;
+        }
+        
+        #imd-div>img {
+            width: 60%;
+            height: 40%;
+            margin-top: 30%;
+        }
+        
+        #content>p {
+            margin: 0;
+            color: gray;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 0;
+        }
+        
+        #content>:nth-child(2) {
+            color: black;
+        }
+        
+        #content>:nth-child(6) {
+            color: black;
+        }
+        
+        #content>h3 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+        
+        #view_apply>:nth-child(2) {
+            margin: 30px 0 30px 0;
+        }
+        
+        #view_apply>:nth-child(3) {
+            color: #3498DB;
+        }
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, Sans-serif;
+        }
+        
+        .dummy_page {
+            height: 200px;
+            width: 100%;
+            background-color: #f0f0f0;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 60px 0px;
+        }
+        /* STYLES SPECIFIC TO FOOTER  */
+        
+        .footer {
+            width: 100%;
+            position: relative;
+            height: auto;
+            background-color: #070617;
+        }
+        
+        .footer .col {
+            width: 190px;
+            height: auto;
+            float: left;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            padding: 0px 20px 20px 20px;
+        }
+        
+        .footer .col h1 {
+            margin: 0;
+            padding: 0;
+            font-family: inherit;
+            font-size: 12px;
+            line-height: 17px;
+            padding: 20px 0px 5px 0px;
+            color: rgba(255, 255, 255, 0.2);
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 0.250em;
+        }
+        
+        .footer .col ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .footer .col ul li {
+            color: #999999;
+            font-size: 14px;
+            font-family: inherit;
+            font-weight: bold;
+            padding: 5px 0px 5px 0px;
+            cursor: pointer;
+            transition: .2s;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+        }
+        
+        .social ul li {
+            display: inline-block;
+            padding-right: 5px !important;
+        }
+        
+        .footer .col ul li:hover {
+            color: #ffffff;
+            transition: .1s;
+            -webkit-transition: .1s;
+            -moz-transition: .1s;
+        }
+        
+        .clearfix {
+            clear: both;
+        }
+        
+        @media only screen and (min-width: 1280px) {
+            .contain {
+                width: 1200px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media only screen and (max-width: 1139px) {
+            .contain .social {
+                width: 1000px;
+                display: block;
+            }
+            .social h1 {
+                margin: 0px;
+            }
+        }
+        
+        @media only screen and (max-width: 950px) {
+            .footer .col {
+                width: 33%;
+            }
+            .footer .col h1 {
+                font-size: 14px;
+            }
+            .footer .col ul li {
+                font-size: 13px;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .footer .col {
+                width: 50%;
+            }
+            .footer .col h1 {
+                font-size: 14px;
+            }
+            .footer .col ul li {
+                font-size: 13px;
+            }
+        }
+        
+        @media only screen and (max-width: 340px) {
+            .footer .col {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <select onchange="filtercity()" name="city" id="city">
+            <option value="Cities">Cities</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Bangalore">Bangalore</option>
+        </select>
+        <select onchange="filter_work()" name="city" id="work_type">
+            <option value="Type">Type</option>
+            <option value="Full Time Internship">Full Time</option>
+            <option value="Work From Home Internship">Work From Home</option>
+            <option value="Part Time Internship">Part Time</option>     
+        </select>
+    </div>
+
+    <div id="main_div">
+        <div id="advertisment">
+            <img src="https://assets.interntheory.com/creative/Internship_left_course_add_02.png" alt="">
+        </div>
+
+        <div id="all_intership">
+            <div id="heading">
+                <h2>All Internships</h2>
+            </div>
+            <div id="intership_programs">
+                <div id="imd-div">
+                    <img src="https://assets.interntheory.com/creative/logo.png" alt="">
+                </div>
+                <div id="content">
+                    <h3>Develop Your Skillset</h3>
+                    <p>Online Skill Development Programs</p>
+                    <p>Taught by Industry Experts Internship</p>
+                    <p>Certified Courses</p>
+                    <p>Guaranteed Internship Opportunities</p>
+                    <p>Learn Industry-Demanded Skills</p>
+                </div>
+                <div id="view_apply">
+                    <p>4-6 Weeks</p>
+                    <p><i style="font-size: large;" class="fi fi-sr-share"></i></p>
+                    <p>UPGRADE SKILL</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="dummy_page">
+        Mobile responsive footer
+    </div>
+    <!-- FOOTER START -->
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Products</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Accounts</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Resources</h1>
+                <ul>
+                    <li>Webmail</li>
+                    <li>Redeem code</li>
+                    <li>WHOIS lookup</li>
+                    <li>Site map</li>
+                    <li>Web templates</li>
+                    <li>Email templates</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Support</h1>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Web chat</li>
+                    <li>Open ticket</li>
+                </ul>
+            </div>
+            <div class="col social">
+                <h1>Social</h1>
+                <ul>
+                    <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+                    <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+                    <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let Internships_data = [{
+        img: "https://assets.interntheory.com/creative/logo.png",
+        title: "Develop Your Skillset",
+        name: "Online Skill Development Programs",
+        time: "Taught by Industry Experts Internship",
+        industry: "Certified Courses",
+        city: "Guaranteed Internship Opportunities",
+        Stipend: "Learn Industry-Demanded Skills",
+        weeks: "4-6 week"
+    }, {
+        img: "https://assets.interntheory.com/uploads/company/logos/3cdd6cced1a455d7623c5319436acdcf3408009b.jpg",
+        title: "Business Development Intern",
+        name: "Finbricks",
+        time: "Full Time Internship",
+        industry: "Real Estate",
+        city: "Mumbai",
+        Stipend: "Stipend: 10000 - 12000 per month",
+        weeks: "4 weeks left"
+    }, {
+        img: "https://assets.interntheory.com/uploads/company/logos/f28e09eca7c1e218295c46085027e09e3f26d54d.jpg",
+        title: "Business Development",
+        name: "Ministry of New",
+        time: "Full Time Internship",
+        industry: "Sales",
+        city: "Mumbai",
+        Stipend: "Stipend: 5000 per sale",
+        weeks: "4 weeks left"
+    }, {
+        img: "https://assets.interntheory.com/uploads/company/logos/22b08b0fbbc16e07e4ec40860d725bdcfd37a735.jpg",
+        title: "Video Editor",
+        name: "Swamonk Educare.",
+        time: "Part Time Internship",
+        industry: "Video Editor",
+        city: "Faridabad",
+        Stipend: "Stipend: 3500 per month",
+        weeks: "3 weeks left"
+    }, {
+        img: "https://assets.interntheory.com/uploads/company/logos/f23ec877601e7dc0cc0eba412c3031c49cff28d9.jpg",
+        title: "Business Development Executive",
+        name: "Kareer King Konsultancy",
+        time: "Full Time Internship",
+        industry: "Business Development",
+        city: "Mumbai",
+        Stipend: "Stipend: 10000 per month",
+        weeks: "3 weeks left"
+    }, {
+        img: "https://assets.interntheory.com/uploads/company/logos/bdc2fb3214ab03616ab475fe2f360cb8b837aa87.jpg",
+        title: "Marketing Internship",
+        name: "Think and Learn Pvt Ltd",
+        time: "Full Time Internship",
+        industry: "Marketing",
+        city: "Ahmedabad",
+        Stipend: "Stipend: 18000 per month",
+        weeks: "3 weeks left"
+    }, {
+        img: "https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg",
+        title: "Marketing Ambassador - Work from Home",
+        name: "Laugh Out Loud Ventures",
+        time: "Work from Home Internship",
+        industry: "Marketing",
+        city: "Bangalore,Chennai,Delhi,Mumbai,Pune,Thane",
+        Stipend: "Stipend: 3000 - 10000 per month",
+        weeks: "3 weeks left"
+    }, {
+        img: "https://assets.interntheory.com/uploads/company/companylogos/5b17adc969018b102b802193f65ffebc07494a2c/7c483889017d4bef536927bf5820941e35f05657com.jpeg",
+        title: "Search Engine Optimisation",
+        name: "Sizzling Career Solutions Pvt Ltd..",
+        time: "Full Time Internship",
+        industry: "SEO",
+        city: "Delhi",
+        Stipend: "Stipend: 5000 - 10000 per month",
+        weeks: "3 weeks left"
+    }, {
+        img: "https://assets.interntheory.com/uploads/company/companylogos/e659b3b149dd5355940bc7ff40dbee2f0f53b22a/2cdd8e5a8b7f7a140f8711f385755340c64b76d5com.jpg",
+        title: "Talent Acquisition, HR Recruiter",
+        name: "Nimbus Logistics",
+        time: "Full Time Internship",
+        industry: "Human Resources",
+        city: "Thane",
+        Stipend: "Stipend: 3000-5000 per month",
+        weeks: "3 weeks left"
+    }, {
+        img: "https://assets.interntheory.com/uploads/company/logos/cb107f6e62308e242a975eb4664f180929f67dad.jpg",
+        title: "Business strategy",
+        name: "Magic factory",
+        time: "Work From Home Internship",
+        industry: "General Management",
+        city: "Mumbai,Bangalore",
+        Stipend: "Stipend: 7000 - 10000 per month",
+        weeks: "3 weeks left"
+    }, ]
+
+
+    //  let city = document.getElementById("city").value;
+    //  console.log(city);
+    // filter_work()
+
+    function filter_work() {
+        var selected_work = document.querySelector("#work_type").value;
+        console.log(selected_work);
+
+        if (selected_work == "Type") {
+            displaydata(Internships_data);
+            return;
+        }
+
+        var filterlist_work = Internships_data.filter(function(elem) {
+            return elem.time == selected_work;
+        })
+        console.log(filterlist_work);
+        displaydata(filterlist_work);
+    }
+
+    function filtercity() {
+        var selected_city = document.querySelector("#city").value;
+        console.log(selected_city);
+
+        if (selected_city == "Cities") {
+            displaydata(Internships_data);
+            return;
+        }
+
+        var filterlist = Internships_data.filter(function(elem) {
+            return elem.city == selected_city;
+        })
+        console.log(filterlist);
+        displaydata(filterlist);
+    }
+
+
+    displaydata(Internships_data);
+
+
+    function displaydata(Internships_data) {
+        document.getElementById("all_intership").innerHTML = "";
+
+        let div_head = document.createElement("div");
+        div_head = "heading";
+
+        let h2 = document.createElement("h2");
+        h2.innerText = "All Internships";
+
+        document.getElementById("all_intership").append(h2);
+
+        Internships_data.map(function(data) {
+
+            let div = document.createElement("div");
+            div.id = "intership_programs";
+
+            let div1 = document.createElement("div");
+            div1.id = "imd-div";
+            let img1 = document.createElement("img");
+            img1.src = data.img;
+            div1.append(img1);
+
+            let div2 = document.createElement("div");
+            div2.id = "content";
+            let head1 = document.createElement("h3");
+            head1.innerText = data.title;
+            let p1 = document.createElement("p");
+            p1.innerText = data.name;
+            let p2 = document.createElement("p");
+            p2.innerText = data.time;
+            let p3 = document.createElement("p");
+            p3.innerText = data.industry;
+            let p4 = document.createElement("p");
+            p4.innerText = data.city;
+            let p5 = document.createElement("p");
+            p5.innerText = data.Stipend;
+            div2.append(head1, p1, p2, p3, p4, p5);
+
+            div3 = document.createElement("div");
+            div3.id = "view_apply";
+            let p6 = document.createElement("p");
+            p6.innerText = data.weeks;
+            let p7 = document.createElement("p");
+            p7.innerHTML = `<i style="font-size: large;" class="fi fi-sr-share"></i>`;
+            let p8 = document.createElement("p");
+            p8.innerText = "VIEW AND APPLY";
+            div3.append(p6, p7, p8)
+
+            div.append(div1, div2, div3)
+
+            document.getElementById("all_intership").append(div);
+        })
+    }
+</script>

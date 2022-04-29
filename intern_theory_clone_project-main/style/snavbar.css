@@ -1,0 +1,77 @@
+#navBarBox{
+    /* border: 2px solid grey; */
+    display: inline-flex;
+    height: 65px;
+   width: 100%;
+   background-image: linear-gradient(to left, white, white);
+}
+#nav_bar{
+   /* height: 60px; */
+   width: 100%;
+   display: inline-flex;
+   justify-content: space-between;
+   margin-top: 1%;
+   border: 1ps solid transparent;
+
+ }
+ #left_box{
+   height: 50px;
+   width: 30%;
+   display: flex;
+   border: 1px solid transparent;
+   
+
+ }
+ #three_line-icon{
+     height: 40px;
+     margin: 1%;
+     width: 35px;
+     border: 1px solid transparent;
+     
+ }
+ #interthery_img_logo{
+   height: 45px;
+   margin: 1%;
+   width: 100px;
+   border: 1px solid transparent;
+   
+}
+#interthery_img_logo >a>img{
+   height: 40px;
+   width: 100px;	
+}
+
+
+ #right_box{
+   height: 50px;
+   width: 15%;
+   display: flex;
+   float: left;
+ }
+
+#right_box>div{
+   margin-left: 10%;
+}
+
+ #sgin{
+   /* background-color: rgb(216, 19, 19); */
+   background-color: rgb(223,30,46);
+   color: white;
+ height: 35px; 
+ width: 85px;
+   margin-bottom:10px;
+   border-radius: 6px;
+   border: none;
+   font-size: 17px;
+   font-weight: 100;
+   margin-top:-1px;
+   margin-left: 15px;
+  
+}
+#cart_img{
+   margin-top: 3%;
+}
+#sgin:hover{
+   cursor: pointer;
+   background-color: rgb(216, 19, 19);
+}

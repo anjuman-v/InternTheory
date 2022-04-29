@@ -1,0 +1,106 @@
+#otp-page-content{
+    width: 340px;
+    height: 530px;
+    background-color: #E53935 ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+#amount>*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+#amount>h3{
+    margin: 0px 0 0 15px;
+    color:white;
+    font-weight:600;
+}
+#amount>p:nth-child(1){
+    margin: 0 10px 0 15px;
+    color:white;
+    text-align: right;
+}
+#amount>p:nth-child(3){
+    margin: 0 0 0 15px;
+    color:white;
+}
+#amount>h2{
+    margin: 10px 0 10px 15px;
+    color:white;
+    font-weight:600;
+}
+#language{
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: #D32F2F
+}
+#language>p{
+    margin: 5px 0 5px 15px;
+    color: white;
+}
+#card-detail{
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: #FFEBEE ;
+}
+#card-detail>div{
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: #FFEBEE ;
+    width: 50%;
+}
+#card-detail>div:nth-child(2){
+    justify-content: end;
+}
+#card-detail>div>p{
+    font-size: 15px;
+    padding: 0 10px 0 10px;
+    margin: 10px 0 10px 0;
+}
+#OTP{
+     /* border: 1px solid black; */
+     height: 58%;
+     background-color: white;
+     overflow: scroll;
+     overflow-x: hidden;
+}
+#otp-detail{
+    border-bottom: 1px solid black;
+    align-items: center;
+    width: 60%;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+#otp-detail>p{
+    margin: 5px 0 0 0;
+}
+#otp-detail>input{
+    margin: 40px 0 0 0;
+    border:none;
+}
+#OTP>div:nth-child(2){
+     display: flex;
+     justify-content: space-around;
+}
+#OTP>div:nth-child(2)>p{
+     margin: 20px 0 0 0;
+     font-size: small;
+     text-decoration: underline;
+}
+
+#verify>p{
+   margin-left: 40%;
+   color: white;
+}
+
+#otp-page{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.1);
+}

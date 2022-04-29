@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/833a729023.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/m_sidebar2.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <style>
+        *{
+            font-family:  sans-serif;
+        }
+        #onc_top{
+            background-image: url("https://assets.interntheory.com/creative/courses/listpage/Course-bannerbg.jpg");
+            background-size: cover;
+            /* background-color: teal; */
+            width: 100%;
+            margin-left: -10px;
+            padding: 1%;
+        }
+        #top_image{
+            width: 94%;
+            height: 120px;
+            margin-left: 50px;
+            margin-right: 50px;   
+        }
+        #onc_certified{
+           width: 85%;
+           height: 100px;
+           /* border: 1px solid black; */
+           margin-left: 10%;
+           margin-top: 3%;
+        }
+        #onc_certified>h2,p{
+            color: grey;
+           
+        }
+        #onc_main{
+            margin: auto;
+            width: 90%;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(4,23%);  
+            grid-gap: 1%;
+            height: 1100px; 
+            margin-left: 8%;
+           
+        }
+        #onc_main>div{
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            height: 335px;
+            border-radius: 10px;
+
+        }
+        #onc_main>h4,p{
+            line-height: 15px;
+            margin-top: -5px;
+            
+        }
+        .div2{
+
+            display: flex;
+            margin-left: 50%;
+            margin-top: 10px;
+        }
+        .div1{
+        margin-top: -20px;
+        }
+        .div1>p{
+            margin-top: -15px;
+        }
+        .images{
+            width: 100%;
+            height: 40%;
+        }
+        .strikethrough_Price{
+            text-decoration: line-through;
+            font-size: small;
+        }
+        .Price{
+            font-size: large;
+            font-weight: 800;
+            margin-left: 10px;
+            color: black;
+        }
+        .emi{
+            color: rgb(255,179,38);
+            margin-top: -10px;
+            margin-left: 55px;
+        }
+        .know{
+            width: 40%;
+            color: rgb(78, 162, 218);
+           background: none;
+           border: none;
+           font-weight: bold;
+        }
+        .know:hover{
+            cursor: pointer;
+            background-color: rgb(193, 211, 205);
+        }
+        .div3{
+            margin-top: -12px;
+        }
+        .div4{
+            display: flex;
+            justify-content: end;
+            margin-right: 5px;
+           
+        }
+      .btn{
+          background-color: rgb(187, 35, 35);
+            color: white;
+            font-weight: 600;
+            padding: 10px;
+            border: 0;
+            border-radius: 3px;
+      }
+      .btn:hover{
+        background-color:rgb(29, 9, 9) ;
+        cursor: pointer;
+      }
+      #firstcourse{
+          background-color:rgb(223,30,46) ;
+          /* position: fixed; */
+          text-align: center;
+          height: 30px;
+          margin: auto;
+          position:sticky ;
+           bottom:0
+      }
+      #firstcourse>p{
+        padding-top: 7px;
+        color: white;
+      }
+      .cart_symbol{
+          height: 55px;
+      }
+
+      /* -------------------------footer------------ */
+      #footer_container{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(68,100,120);
+  
+    
+}
+#footer_con{
+    display: flex;
+}
+
+#footer_left{
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+#footer_midd{
+    margin-left: 230px;
+    margin-top: 70px;
+}
+
+#footer_right{
+    margin-left: 230px;
+    margin-top: 70px;
+}
+#footer_p{
+    color: aliceblue;
+}
+#footer_h{
+    color: aliceblue;
+
+}
+#footer_dis{
+    display: flex;
+  margin-top: 20px;
+
+}
+#footer_dis >p{
+   margin-left: 70px;
+   color: white;
+
+}
+#footer_in{
+    margin-left: 550px;
+    color: white;
+}
+.fa-brands{
+     margin-right: 20px;
+}
+#icon{
+     margin-left: 130px;
+     margin-top: 100px;
+     color: white;
+     
+}
+/* -----------------------navbar---------------------- */
+
+    </style>
+</head>
+<body>
+    <div id="navBarBox"></div>
+
+     <!-- ---------------sidebar.html-------------------- -->
+     <div id="sidebar_div" ></div>
+   
+    <div id="onc_container">
+        <div id="onc_top">
+            <img id="top_image" src="https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png" alt="topimg">
+        </div>
+        <div id="onc_certified">
+            <h2>Certified Online Courses</h2>
+            <p>Upgrade your skills with Intern Theory's online learning platform. Enrol for any certified online courses and get a step ahead of competition. Select from a range of skill based online courses and kickstart your career.</p>
+        </div>
+        <div id="onc_main"></div>
+    </div>
+    <div id="firstcourse">
+        <p>Use Coupon Code <a> FIRSTCOURSE</a> to avail a discount of 20% on your course enrolment.<a></a></p>
+    </div>
+    <div id="footer_container">
+    </div>
+</body>
+</html>
+<script type="module">
+
+// let OnlineData=[
+//     {images:"https://assets.interntheory.com/creative/courses/thumbnails/it.jpg",
+//     title:"IT Starter Pack (4 Courses)",description:"Learn the most demanded skills in the IT industry today. Sig ...",
+//     strikethrough_Price:"₹ 32999",Price:"₹ 15999",know:"KNOW MORE",emi:"EMI Starting at ₹ 915/month"},
+//     {images:"https://assets.interntheory.com/creative/courses/thumbnails/finthumbnail.jpg",title:"Finance Starter Pack (3 Courses)",description:"Learn the most demanded skills in the Finance industry today ...",strikethrough_Price:"₹ 23999",Price:11999,know:"KNOW MORE",emi:"EMI Starting at ₹ 687/month",incart:0},
+//     {images:"https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png",title:"Digital Marketing Course",description:"Learn the art of digital marketing. Sign up for this online ...",strikethrough_Price:"₹ 11999",Price:5999,know:"KNOW MORE",emi:"EMI Starting at ₹ 343/month",incart:0},
+//     {images:"https://assets.interntheory.com/creative/courses/thumbnails/stock-market-course.png",title:"Stock Market Course",description:"Learn how to trade and invest in stock markets. Enrol for th ...",strikethrough_Price:"₹ 11999",Price:5999,know:"KNOW MORE",emi:"EMI Starting at ₹ 343/month"},
+//     {images:"https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png",title:"Data Analytics With R Programming Course",description:"Learn data science online. Join this online data analytics c ...",strikethrough_Price:"₹ 11999",Price:5999,know:"KNOW MORE",emi:"EMI Starting at ₹ 343/month",incart:0},
+//     {images:"https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png",title:"Web Development Course",description:"Learn the art of web design and web development. Join this o ...",strikethrough_Price:"₹ 7999",Price:3999,know:"KNOW MORE",emi:"EMI Starting at ₹ 229/month"},
+//     {images:"https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png",title:"Tally + GST Course",description:"Sign up for this online tally and gst course and learn how t ...",strikethrough_Price:"₹ 7999",Price:3999,know:"KNOW MORE",emi:"EMI Starting at ₹ 229/month"},
+//     {images:"https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png",title:"Android App Development Using Kotlin Course",description:"Learn the art of android app design and web development. Joi ",strikethrough_Price:"₹ 7999",Price:3999,know:"KNOW MORE",emi:"EMI Starting at ₹ 229/month",incart:0},
+//     {images:"https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png",title:"Advanced Excel Course",description:"Master MS Excel. Take the online ms excel course and learn t ...",strikethrough_Price:"₹ 5999",Price:2999,know:"KNOW MORE",emi:"EMI Starting at ₹ 172/month",incart:0},
+//     {images:"https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png",title:"R Programming Course",description:"Learn r programming online. Sign up for this online r progra ...",strikethrough_Price:"₹ 5999",Price:2999,know:"KNOW MORE",emi:"EMI Starting at ₹ 172/month",incart:0},
+// ]
+let main=document.getElementById("onc_main");
+
+import {appendOnlineData} from "./script/CourseData.js"
+
+// var data5;
+const fetchonline=async()=>{
+    let url=`https://coursesnewnodejs.herokuapp.com/online`;
+    try{
+         let res=await fetch(url);
+        var OnlineData=await res.json();
+         console.log(OnlineData);
+         appendOnlineData(OnlineData,main);
+         myfunction(OnlineData)
+    }
+    catch(err){
+      console.log(err);
+    }
+  }
+  fetchonline();
+
+
+
+  // --------navbar.js-------------------------------------------
+
+import navBar from "./component/navBar.js"
+ 
+   
+ let navBarBox = document.getElementById("navBarBox");
+//  console.log(navBarBox )
+ navBarBox.innerHTML = navBar();
+
+ 
+   
+// --------slidebar.js-------------------------------------------
+   
+import sideBar from "./script/m_sidebar2.js"
+    
+    let sidebar_box = document.getElementById("sidebar_div");
+    console.log(sidebar_box)
+    sidebar_box.innerHTML = sideBar();
+
+
+    document.querySelector("#sliding").addEventListener("click",sliding_function)
+
+    function sliding_function(){
+    let sliding_sidebar = document.getElementById("side_bar")
+    sliding_sidebar.style.left = "0";
+    sliding_sidebar.style.background = "white";
+     }
+    
+     document.querySelector("#sliding2").addEventListener("click",sliding_function2)
+
+    function sliding_function2(){
+    let sliding_sidebar = document.getElementById("side_bar")
+    sliding_sidebar.style.left = "-320px";
+     }
+    
+    //  document.querySelector("#main_div").addEventListener("click",sliding_function3)
+
+    // function sliding_function3(){
+    //     console.log("OK")
+    // let sliding_sidebar = document.getElementById("side_bar")
+    // sliding_sidebar.style.left = "-320px";
+    //  }
+
+
+ // let sliding_sidebar = document.getElementById("side_bar")
+    // sliding_sidebar.style.left = "-310px";
+
+
+
+    let show = document.getElementById("ul1")
+    console.log(show)
+    show.onclick = function(){
+        let show1 = document.getElementById("ul-1")
+        console.log(show1)
+        if( show1.style.display === ''){
+            show1.style.display = "none";
+        }
+        else if( show1.style.display === "none"){  
+            show1.style.display = 'block';
+        }
+        else if( show1.style.display === "block"){  
+            show1.style.display = 'none';
+        }
+      
+    }
+    let show_2 = document.getElementById("ul2")
+    console.log(show_2)
+    show_2.onclick = function(){
+        let show2 = document.getElementById("ul-2")
+        console.log(show2)
+        if( show2.style.display === ''){
+            show2.style.display = "none";
+        }
+        else if( show2.style.display === "none"){  
+            show2.style.display = 'block';
+        }
+        else if( show2.style.display === "block"){  
+            show2.style.display = 'none';
+        }   
+    }
+
+    let show_3 = document.getElementById("ul3")
+    console.log(show_3)
+    show_3.onclick = function(){
+        let show3 = document.getElementById("ul-3")
+        console.log(show3)
+        if( show3.style.display === ''){
+            show3.style.display = "none";
+        }
+        else if( show3.style.display === "none"){  
+            show3.style.display = 'block';
+        }
+        else if( show3.style.display === "block"){  
+            show3.style.display = 'none';
+        }   
+    }
+
+  
+
+
+
+
+// .......................footer.js............
+
+import footer from "./component/footer.js"    
+
+var foot = document.getElementById("footer_container")
+foot.innerHTML=footer()
+
+
+//--------------------------onlinecourses.js----------------------------
+
+function  myfunction(OnlineData){
+let carts=document.querySelectorAll(".btn")
+
+
+
+for(let i=0;i<carts.length;i++){
+
+   carts[i].addEventListener("click",()=>{
+    // console.log("added to  cart")
+    cartNumbers(OnlineData[i]);
+    totalCost(OnlineData[i])
+     
+   })
+}
+function onLoadCartNo(){
+
+let productNumber=localStorage.getItem("cartNumbers");
+
+if(productNumber){
+
+    document.querySelector("#cart_img span").textContent=productNumber;
+}
+}
+
+    function cartNumbers(OnlineData){
+
+        // console.log("clicked on ",classData)
+
+        let productNumber=localStorage.getItem("cartNumbers");
+       
+        productNumber=parseInt(productNumber);
+        
+        if(productNumber){
+            localStorage.setItem('cartNumbers',productNumber+1)
+            document.querySelector('#cart_img span').textContent=productNumber+1;
+        }else{
+            localStorage.setItem('cartNumbers',1)
+            document.querySelector('#cart_img span').textContent=1;
+        }
+       
+        setItems(OnlineData);
+
+    }
+    
+let cartItems;
+function setItems(OnlineData){
+    // console.log("inside the setitem function");
+    // console.log("my classdata is", OnlineData);
+ 
+     cartItems=localStorage.getItem("productIncart")
+     cartItems=JSON.parse(cartItems)
+    console.log("my cart items are ", cartItems)
+    if( cartItems !=null){
+        let currentStoredData = cartItems[OnlineData.title]
+         if(!currentStoredData){
+            cartItems={
+                ...cartItems,
+                [OnlineData.title] : OnlineData
+            }
+         }
+      cartItems[OnlineData.title].incart += 1;
+      console.log(cartItems.incart)
+    }else{
+        OnlineData.incart = 1;
+     cartItems={
+        [OnlineData.title] : OnlineData
+    } 
+    console.log(cartItems.incart)
+ }
+ localStorage.setItem("productIncart",JSON.stringify(cartItems))
+
+} 
+function  totalCost(product){
+
+// console.log("the product price is ",product.Price)
+
+let cartCost=localStorage.getItem("totalCost")
+
+console.log("my cartcost is ",cartCost)
+if(cartCost!=null){
+    cartCost=parseInt(cartCost)
+    localStorage.setItem("totalCost",cartCost+product.Price)
+}else{
+
+    localStorage.setItem("totalCost",product.Price)
+}
+
+}
+
+    onLoadCartNo()
+}
+</script>

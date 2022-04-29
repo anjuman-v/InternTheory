@@ -1,0 +1,52 @@
+#container{
+    display: flex;
+}
+
+#contact_left{
+    width: 35%;
+    margin-left: 200px;
+}
+#contact_h{
+    font-size: 60px;
+}
+#input{
+    margin-top: 50px;
+    padding-right: 200px;
+     
+}
+#input1{
+    margin-top: 50px;
+    background-color: rgb(223,30,46);
+  margin-left: 130px;
+  
+  border: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 10px;
+  color: aliceblue;
+  border-radius: 3px;
+  
+}
+#contact_p{
+   font-size: 20px;
+   color: gray;
+
+}
+
+#contact_right{
+   margin-top: 150px;
+}
+
+.fa-brands{
+   margin-left: 50px;
+   margin-top: 30px;
+}
+.con_p{
+   margin-left: 150px;
+}
+#con_h{
+   margin-left: 130px;
+}
+
+
+ 

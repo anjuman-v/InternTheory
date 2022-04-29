@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/833a729023.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=".\style\otppage.css">
+    <style>
+     
+    </style>
+</head>
+<body>
+    <button id="button">click</button>
+     <!-- -------- -->
+    <!---------otp page-start -------------------->
+    <div id="otp-page">
+        <div id="otp-page-content">
+            <div id="amount">
+                <p id="close-otp-page">X</p>
+                <h3>InternTheory </h3>
+                <p>purchase Description</p>
+                <h2>₹ 18,879</h2>
+            </div>
+            <div id="language">
+                <p>English</p>
+                <p><i style="font-size: 10px;" class="fa-solid fa-angle-down"></i></p>
+            </div>
+            <div id="card-detail">
+                <div><p><i class="fa-solid fa-angle-left"></i></p>
+                    <p>Card</p></div>
+                <div><p><i class="fa-regular fa-user"></i></p>
+                    <p>+7039746800</p></div>
+            </div>
+            <div id="OTP">
+                <div id="otp-detail">
+                    <p>Enter OTP sent to</p>
+                    <p>+917039746800 to access</p>
+                    <p>Saved Cards</p>
+                    <input type="zipcode">
+                </div>
+                <div>
+                    <p>Resend OTP</p>
+                    <p>Skip Saved Cards</p>
+                </div>
+            </div>
+            <div id="verify">
+                <p>VERIFY</p>
+            </div>
+        </div>
+    </div>
+<!-- -------------------------OTP-page-end--------------------- -->
+</body>
+</html>
+
+<!-- -------------------------OTP-page-end--------------------- -->
+
+<script>
+    document.getElementById("button").addEventListener("click",function(){
+        document.getElementById("otp-page").style.display = "flex";
+    })
+
+    document.getElementById("close-otp-page").addEventListener("click",function(){
+        document.getElementById("otp-page").style.display = "none";
+    })
+</script>

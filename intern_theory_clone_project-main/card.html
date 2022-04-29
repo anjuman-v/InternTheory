@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/833a729023.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=".\style\cardpage.css">
+    <link rel="stylesheet" href=".\style\otppage.css">
+    <style>
+     
+    </style>
+</head>
+<body>
+    
+    <button id="otp-button">click for otp</button>
+    <!-- <button id="card-button">click for card</button> -->
+    <!-- -------------------------cardpage.html------------ -->
+    <div id="card-page">
+        <div id="card-page-content">
+            <div id="card-amount">
+                <p id="close-card-page">X</p>
+                <h3>InternTheory </h3>
+                <p>purchase Description</p>
+                <h2>₹ 18,879</h2>
+            </div>
+            <div id="card-language">
+                <p>English</p>
+                <p><i style="font-size: 10px;" class="fa-solid fa-angle-down"></i></p>
+            </div>
+            <div id="card-info">
+                <div id="user-info">
+                    <p>+917039746800</p>
+                    <p>|</p>
+                    <p>akashbind12@gmai...</p>
+                </div>
+                <div id="method">
+                    <p>PREFERRED PAYMENT METHODS</p>
+                </div>
+                <div id="UPI">
+                    <div><img src="https://cdn.razorpay.com/checkout/gpay.png" alt=""></div>
+                    <p>UPI-Google Pay</p>
+                    <p><i style="color: #D32F2F; margin-left: 90px;" class="fa-solid fa-angle-right"></i></p>
+                </div>
+                <div id="UPI">
+                    <div><img src="https://cdn.razorpay.com/app/paytm.svg" alt=""></div>
+                    <p>UPI-PayTM</p>
+                    <p><i style="color: #D32F2F; margin-left: 110px;" class="fa-solid fa-angle-right"></i></p>
+                </div>
+                <div id="UPI">
+                    <div><img src="https://cdn.razorpay.com/checkout/phonepe.png" alt=""></div>
+                    <p>UPI-Phone Pay</p>
+                    <p><i style="color: #D32F2F;  margin-left: 90px;" class="fa-solid fa-angle-right"></i></p>
+                </div>
+
+                <div id="method">
+                    <p>CARDS,UPI & MORE</p>
+                </div>
+                <div class="card" id="UPI">
+               <div><i style="font-size: 18px; color: #D32F2F;" class="fa-solid fa-credit-card"></i></div>
+                    <p>Cards</p>
+                    
+                </div>
+                <div id="UPI">
+                    <div><i  style="font-size: 18px; color: #D32F2F;" class="fa-solid fa-angles-right"></i></div>
+                    <p>UPI/QR</p>
+                </div>
+                <div id="UPI">
+                    <div><i  style="font-size: 18px; color: #D32F2F;" class="fa-solid fa-landmark"></i></div>
+                    <p>Netbanking</p>
+                </div>
+                <div id="UPI">
+                    <div><i style="font-size: 18px; color: #D32F2F;" class="fa-solid fa-wallet"></i></div>
+                    <p>Wallet</p>
+                </div>
+                <div id="UPI">
+                    <div><i style="font-size: 18px; color: #D32F2F;" class="fa-solid fa-calendar"></i></div>
+                    <p>EMI</p>
+                </div>
+                <div id="UPI">
+                    <div><i style="font-size: 18px; color: #D32F2F;" class="fa-solid fa-money-bill"></i></div>
+                    <p>PayLater</p>
+                    <i slot="icon" class="svelte-ezine"></i>
+                </div>    
+            </div>     
+        </div>
+    </div>
+    <!-- -------------------------cardpage.html.end------------------ -->
+
+      <!---------otp page-start -------------------->
+      <div id="otp-page">
+        <div id="otp-page-content">
+            <div id="amount">
+                <p id="close-otp-page">X</p>
+                <h3>InternTheory </h3>
+                <p>purchase Description</p>
+                <h2>₹ 18,879</h2>
+            </div>
+            <div id="language">
+                <p>English</p>
+                <p><i style="font-size: 10px;" class="fa-solid fa-angle-down"></i></p>
+            </div>
+            <div id="card-detail">
+                <div><p><i class="fa-solid fa-angle-left"></i></p>
+                    <p>Card</p></div>
+                <div><p><i class="fa-regular fa-user"></i></p>
+                    <p>+7039746800</p></div>
+            </div>
+            <div id="OTP">
+                <div id="otp-detail">
+                    <p>Enter OTP sent to</p>
+                    <p>+917039746800 to access</p>
+                    <p>Saved Cards</p>
+                    <input type="zipcode">
+                </div>
+                <div>
+                    <p>Resend OTP</p>
+                    <p>Skip Saved Cards</p>
+                </div>
+            </div>
+            <div id="verify">
+                <p>VERIFY</p>
+            </div>
+        </div>
+    </div>
+<!-- -------------------------OTP-page-end--------------------- -->
+
+</body>
+</html>
+
+<script>
+    // -----------------card.js---------------------------------------------------
+    document.getElementById("card-button").addEventListener("click",function(){
+        document.getElementById("card-page").style.display = "flex";
+    })
+
+    document.getElementById("close-card-page").addEventListener("click",function(){
+        document.getElementById("card-page").style.display = "none";
+    })
+
+    document.querySelector(".card").addEventListener("click",function(){
+       console.log("ok")
+        document.getElementById("card-page").style.display = "none";
+        document.getElementById("otp-page").style.display = "flex";
+
+    })
+
+    // -----------------otp.js---------------------------------------------------
+    document.getElementById("otp-button").addEventListener("click",function(){
+        document.getElementById("otp-page").style.display = "flex";
+    })
+
+    document.getElementById("close-otp-page").addEventListener("click",function(){
+        document.getElementById("otp-page").style.display = "none";
+    })
+
+    document.getElementById("verify").addEventListener("click",function(){
+        window.location.href="index.html"
+    })
+</script>
